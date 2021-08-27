@@ -146,6 +146,11 @@ ul li a:hover{
 .hover-line:hover::after{
     width: 100%;
 }
+@media screen and (max-width: 1390px){
+    .logo{
+        margin-left: 450px;
+    }
+}
 @media screen and (max-width: 1360px){
     .logo{
         margin-left: 430px;

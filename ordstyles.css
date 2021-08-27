@@ -229,6 +229,11 @@ hr{
     border-radius: 30px;
     cursor: pointer;
 }
+@media screen and (max-width: 1390px){
+    nav{
+        margin-top: -70px;
+       } 
+}
 @media screen and (max-width: 1360px){
    nav{
     margin-top: -70px;
