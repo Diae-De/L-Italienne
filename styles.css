@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/pexels-davide-baraldi-1739748.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+nav{
+    width: 85%;
+    height: auto;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 500px;
+    cursor: pointer;
+    margin-top: -100px;
+    margin-left: 710px;
+    border-radius: 120px;
+}
+
+.text-box{
+    width: 60%;
+    margin: 200px auto 0;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.text-box h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+
+.text-box p{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+ul li a{
+    color: rgba(255, 255, 255, 0.692);
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.wrapper{
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  text-align: center;
+  color: #fff;
+  border: 3px solid rgb(255, 255, 255);
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #006400;
+  transition: all .35s;
+}
+
+.hover:hover{
+  width: 200px;
+  border: 3px solid #006400;
+  background: transparent;
+  color: #006400;
+}
+
+.hover:hover + .icon{
+  border: 3px solid #006400;
+  right: -25%;
+}
+
+ul li a:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.hover-line::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #006400;
+    transition: 0.3s;
+}
+
+.hover-line:hover::after{
+    width: 100%;
+}
