@@ -244,4 +244,45 @@ hr{
     margin-top: -70px;
    } 
 }
-
+@media screen and (max-width: 375px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    
+    #slideimg{
+        width: 800px;
+    }
+    nav{
+        margin-top: -20px;
+       }
+    .logo{
+    width: 35%;
+    border-radius: 20px;
+    }
+    ul li{
+        display: flex;
+        margin: 10px 30px;
+        margin-top: 12px;
+    }
+    
+    ul li a{
+        font-size: 13px;
+    }
+    .menus{
+        width: 80%;
+    }
+    .menu{
+        margin-top: 300px;
+        font-size: 16px;
+        flex-basis: 40%;
+    } 
+    #bottom{
+        margin-top: 50px;
+    }
+    .foods{
+        width: 45%;
+    }  
+}
